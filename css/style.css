@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 208, 208);
+}
+
+.main-navbar {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    /* margin-left: 150px;
+    margin-right: 150px; */
+}
+
+.logo-img {
+    margin-right: 50px;
+}
+
+input {
+    margin: -10px;
+    height: 60px;
+    border: 2px solid black;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+
+.navbar-btn {
+    height: 60px;
+    width: 160px;
+    font-size: 20px;
+    background-color: rgb(254, 130, 41);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+   
+}
+.navbar-icons img {
+    margin-right: 15px; 
+    width: 40px; 
+    height: 40px; 
+  cursor: pointer;
+}
+
+.user {
+    margin-left: 30px;
+    font-size: 25px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.navbar-arrow {
+    rotate: 90deg;
+    margin-left: 10px;
+}
+
+.availability {
+    display: flex;
+    margin-left: 20px;;
+    align-items: baseline;
+    gap: 15px;
+    cursor: pointer;
+    
+    
+   
+    
+}
+.availability-item:nth-child(1) {
+    font-size: 26px;
+}
+
+.availability-item:nth-child(2) {
+    font-size: 36px;
+}
+
+.availability-item:nth-child(3) {
+    font-size: 46px;
+}
+
+.availability-item:nth-child(4) {
+    font-size: 46px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
+    width: 70px;
+    height: 70px;
+    padding-left: 18px;
+
+}
+
+
+.second-navbar {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    gap: 90px;
+    padding-left: 70px;
+    font-size: 20px;
+    
+    
+}
+
+.second-navbar span {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.second-navbar img {
+
+    padding-right: 20px;
+    
+}
