@@ -115,8 +115,6 @@ input {
     font-size: 20px;
     margin-left: 0;
     padding-left: 260px;
-    
-    
 }
 
 .second-navbar span {
@@ -151,4 +149,33 @@ input {
     width: 2080px;
     margin-left: 240px;
     margin-right: 220px;
+}
+
+.categories {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 240px;
+    width: 2080px;
+    margin-top: 30px;
+    height: 250px;
+    padding-top: 30px;
+    
+   
+}
+
+.categories img {
+    
+    width: 120px;
+    height: 120px;
+}
+
+.categories p {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    text-align: center;
 }
