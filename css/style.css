@@ -6,6 +6,8 @@
 
 body {
     background-color: rgb(209, 208, 208);
+    font-family: 'Roboto';
+    height: 4000px;
 }
 
 .main-navbar {
@@ -15,8 +17,7 @@ body {
     color: black;
     border-bottom: 2px solid black;
     justify-content: center;
-    /* margin-left: 150px;
-    margin-right: 150px; */
+  
 }
 
 .logo-img {
@@ -53,7 +54,9 @@ input {
     margin-right: 15px; 
     width: 40px; 
     height: 40px; 
-  cursor: pointer;
+    cursor: pointer;
+    filter: grayscale(100%);
+    
 }
 
 .user {
@@ -169,6 +172,7 @@ input {
     
     width: 120px;
     height: 120px;
+    cursor: pointer;
 }
 
 .categories p {
@@ -178,4 +182,99 @@ input {
     width: 120px;
     height: 120px;
     text-align: center;
+    cursor: pointer;
+}
+
+.products {
+    height: 850px;
+    width: 2080px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 240px;
+    margin-top: 50px;
+    padding-top: 30px;
+
+}
+
+.products img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 60px;
+    padding-right: 20px;
+}
+
+.products span {
+    
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 27px;
+}
+
+.main-product-price {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 27px;
+}
+
+.smart-logo img {
+    width: 130px;
+    height: 130px;
+    margin-left: 27px;
+    margin-top: -40px;
+}
+
+.product-description {
+    font-size: 20px;
+    margin-left: 27px;
+    margin-top: -40px;
+    font-weight: bold;
+    width: 250px;
+
+}
+
+
+.instalment-price_1 {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 27px;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 250px;
+    width: 40px;
+}
+.instalment-price_2 {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 27px;
+    margin-top: 30px;
+    color: gray;
+    width: 80px;
+}
+
+.instalment-box {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 70px;
+    text-align: center;
+    background-color: rgb(62, 151, 240);
+    color: white;
+    border-radius: 10%;
+    padding: 1px 2px 1px 2px;
+}
+
+.buy-to {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 27px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.delivery {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 27px;
+    color: limegreen;
 }
