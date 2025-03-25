@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allegro</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
 </head>
 
 <body>
-    <main>
-        <header>
-            <div class="main-navbar">
-                <img class="logo-img" src="/img/logo.svg" alt="allegro logo">
-                <div class="serach">
-                    <input type="text" placeholder="Czego szukasz?" size="60">
-                    <input type="text" placeholder="Wszystkie kategorie" size="30">
-                    <button class="navbar-btn">SZUKAJ</button>
+    <header class="header">
+        <div>
+            <div class="mobile-main-navbar">
+                <div class="mobile-availability">
+                    <img class="mobile-logo-img" src="/img/logo.svg" alt="allegro logo">
+                    <span class="mobile-availability-item">A<sup></sup></span>
+                    <span class="mobile-availability-item">A<sup>+</sup></span>
+                    <span class="mobile-availability-item">A<sup>++</sup></span>
+                    <span class="mobile-availability-item">A<sup></sup></span>
                 </div>
-                <div class="navbar-icons">
+                <div class="mobile-navbar-icons">
                     <img src="/img/delivery.svg" alt="dostawa">
                     <img src="/img/ulubione.svg" alt="ulubione">
                     <img src="/img/czat.svg" alt="czat">
                     <img src="/img/powiadomienia.svg" alt="powiadomienia">
                     <img src="/img/koszyk.svg" alt="koszyk">
-
                 </div>
-                <span class="user">User</span>
-                <img class="navbar-arrow" src="/img/strzalka.svg" alt="rozwinięcie użytkownika">
-                <div class="availability">
-                    <span class="availability-item">A<sup></sup></span>
-                    <span class="availability-item">A<sup>+</sup></span>
-                    <span class="availability-item">A<sup>++</sup></span>
-                    <span class="availability-item">A<sup></sup></span>
+                <div class="mobile-search">
+                    <input class="mobile-first_input" type="text" placeholder="Czego szukasz?" size="60">
+                    <input class="mobile-second_input" type="text" placeholder="Wszystkie kategorie" size="30">
+                    <button class="mobile-navbar-btn"><img class="mobile-lupa" src="/img/lupa.svg" alt=""></button>
                 </div>
             </div>
+            <span class="mobile-user">User</span>
+            <img class="mobile-navbar-arrow" src="/img/strzalka.svg" alt="rozwinięcie użytkownika">
 
-            <div class="second-navbar">
+        </div>
+        <div class="mobile-categories_bar">
+            <span>Kategorie</span>
+
+            <div class="mobile-second-navbar">
                 <span>Kategorie <img src="/img/strzalka.svg" alt="rozwinięcie kategorii"></span>
                 <span><img src="/img/nav2img1.svg" alt="Allegro Days">Allegro Days do -40%</span>
                 <span><img src="/img/nav2img2.svg" alt="Allegro Protect">Allegro Protect</span>
@@ -45,216 +48,92 @@
                 <span><img src="/img/nav2img4.svg" alt="Sprzedawaj na Allegro">Sprzedawaj na Allegro</span>
 
             </div>
-        </header>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <main>
 
         <div>
-            <img class="banner-img" src="/img/baner.webp" alt="Baner reklamowy Allegro">
-            <div class="dotts"></div>
+            <img class="mobile-banner-img" src="/img/baner.webp" alt="Baner reklamowy Allegro">
         </div>
-        <div class="categories">
+        <div class="mobile-categories">
             <div>
                 <img src="/img/kat1.png" alt="Kupuj taniej do i 40%">
-                <p>Kupuj taniej do i 40%</p>
+                <p>Kupuj taniej</p>
             </div>
             <div>
                 <img src="/img/kat2.png" alt="Prezenty na Dzień Kobiet">
-                <p>Prezenty na Dzień Kobiet</p>
+                <p>Dzień Kobiet</p>
             </div>
             <div>
                 <img src="/img/kat3.png" alt="Zgarnij kupon 100 zł">
-                <p>Zgarnij kupon 100 zł</p>
+                <p>Allegro Pay</p>
             </div>
             <div>
                 <img src="/img/kat4.png" alt="Oszczędzasz z Smart!">
-                <p>Oszczędzasz z Smart!</p>
+                <p>Allegro Smart</p>
             </div>
-            <div>
-                <img src="/img/kat5.png" alt="Motoryzacja">
-                <p>Motoryzacja</p>
-            </div>
-            <div>
-                <img src="/img/kat6.png" alt="Elektronika">
-                <p>Elektronika</p>
-            </div>
-            <div>
-                <img src="/img/kat7.png" alt="Dom">
-                <p>Dom</p>
-            </div>
-            <div>
-                <img src="/img/kat8.png" alt="Moda">
-                <p>Moda</p>
-            </div>
-            <div>
-                <img src="/img/kat9.png" alt="Sport i turystyka">
-                <p>Sport i turystyka</p>
-            </div>
-            <div>
-                <img src="/img/kat10.png" alt="Gry">
-                <p>Gry</p>
-            </div>
-            <div>
-                <img src="/img/kat11.png" alt="Dziecko">
-                <p>Dziecko</p>
-            </div>
-            <div>
-                <img src="/img/kat12.png" alt="Supermarket">
-                <p>Supermarket</p>
-            </div>
+
         </div>
-        <div class="products">
-            <div>
-                <span>Gwarancja najnizszej ceny</span>
-            </div>
-            <div style="display: flex;">
-                <div style="width:auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
+        <div class="mobile-products">
+            <div class="mobile-offer">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <img class="mobile-product-img" src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
+                        <div class="mobile-price">
+                            <p class="mobile-main-product-price">4100,00 zł</p>
+                        </div>
+                        <div class="mobile-smart-logo">
+                            <img src="/img/smart.svg" alt="smart logo">
+                        </div>
+                        <div class="mobile-product-description">
+                            <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
+                        </div>
+                        <div class="mobile-instalment">
+                            <p class="mobile-instalment-price_1">203,40 </p>
+                            <p class="mobile-instalment-price_2">x 20 rat</p>
+                            <p class="mobile-instalment-box">raty zero</p>
+                            <p class="mobile-buy-to">zapłać później z </p>
+                            <p class="mobile-delivery">dostawa pojutrze</p>
+                        </div>
                     </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
+                    <div>
+                        <div style="width:auto; height: auto;">
+                            <img class="mobile-product-img" src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
+                            <div class="mobile-price">
+                                <p class="mobile-main-product-price">4100,00 zł</p>
+                            </div>
+                            <div class="mobile-smart-logo">
+                                <img src="/img/smart.svg" alt="smart logo">
+                            </div>
+                            <div class="mobile-product-description">
+                                <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
+                            </div>
+                            <div class="mobile-instalment">
+                                <p class="mobile-instalment-price_1">203,40 </p>
+                                <p class="mobile-instalment-price_2">x 20 rat</p>
+                                <p class="mobile-instalment-box">raty zero</p>
+                                <p class="mobile-buy-to">zapłać później z</p>
+                                <p class="mobile-delivery">dostawa pojutrze</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-                <div style="width: auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
-                    </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
-                    </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-                <div style="width: auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
-                    </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
-                    </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-                <div style="width: auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
-                    </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
-                    </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-                <div style="width: auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
-                    </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
-                    </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-                <div style="width: auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
-                    </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
-                    </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-                <div style="width: auto; height: auto;">
-                    <img src="/img/produkt1.jpg" alt="produkt telefon komórkowy">
-                    <div class="price">
-                        <span class="main-product-price">4100,00 zł</span>
-                    </div>
-                    <div class="smart-logo">
-                        <img src="/img/smart.svg" alt="smart logo">
-                    </div>
-                    <div class="product-description">
-                        <p>Telefon Smartfon Xiaomi Mix Flip 12GB/512GB 5G czarny 120Hz Leica 6.86"</p>
-                    </div>
-                    <div class="instalment">
-                        <p class="instalment-price_1">203,40 </p>
-                        <p class="instalment-price_2">x 20 rat</p>
-                        <p class="instalment-box">raty zero</p>
-                        <p class="buy-to">kup do 16:00 -</p>
-                        <p class="delivery">dostawa jutro</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <footer>
-                <div class="description">
 
                 </div>
-                <div class="logo-img">
-
-                </div>
-                <div class="allegro-group-links">
-
-                </div>
-            </footer>
     </main>
+    <footer>
+        <div class="description">
+
+        </div>
+        <div class="logo-img">
+
+        </div>
+        <div class="allegro-group-links">
+
+        </div>
+    </footer>
 </body>
 
 </html>

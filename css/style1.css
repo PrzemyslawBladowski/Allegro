@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    width: 100%;
+    margin: 0   auto;
+    background-color: rgb(234, 237, 240);
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px ) and (max-width: 767px) {
+
+
+    .mobile-main-navbar {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between; /* Rozdzielenie elementów na boki */
+        background-color: white;
+        
+    }
+
+    .mobile-search {
+        display: flex;
+        flex-direction: row; /* Ustaw elementy w jednej linii */
+        align-items: center; /* Wyrównanie elementów w pionie */
+        gap: 0; /* Brak odstępu między inputem a przyciskiem */
+        
+       
+        
+    }
+
+    .mobile-logo-img {
+        width: 50%; /* Szerokość logo */
+        display: flex;
+        
+    }
+
+    .mobile-first_input {
+        width: 85%; /* Szerokość pola tekstowego */
+        height: 60px;
+        border-top-right-radius: 0; /* Usuń zaokrąglenie w prawym górnym rogu */
+        border-bottom-right-radius: 0; /* Usuń zaokrąglenie w prawym dolnym rogu */
+        background-color: rgba(228, 230, 230, 0.865);
+        padding-left: 10px;
+        font-size: 20px;
+        
+        
+    }
+
+    .mobile-navbar-btn {
+        width: 15%; /* Dopasowanie szerokości przycisku */
+        height: 60px;
+        border-top-left-radius: 0; /* Usuń zaokrąglenie w lewym górnym rogu */
+        border-bottom-left-radius: 0; /* Usuń zaokrąglenie w lewym dolnym rogu */
+        background-color: rgb(254, 130, 41);
+        border: none;
+        color: white;
+        
+    }
+    .mobile-lupa {
+        color: white;
+        width: 40px;
+    }
+
+    .mobile-second_input {
+        display: none;
+    }
+
+    .mobile-user {
+        display: none;
+    }
+
+    .mobile-navbar-arrow {
+        display: none;
+    }
+
+    .mobile-second-navbar {
+        display: none; 
+    }
+
+    .mobile-navbar-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px; 
+        
+    }
+
+    .mobile-navbar-icons img {
+        width: 50px;
+    }
+
+
+
+    .mobile-availability {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        padding-bottom: 20px;
+        
+     
+    }
+    .mobile-availability-item {
+        font-size: 26px; /* Ustawienie rozmiaru czcionki na 36px dla wszystkich elementów */
+        cursor: pointer;
+        align-items: center;
+    }
+    
+    .mobile-availability-item:last-child {
+        background-color: rgb(0, 0, 0); /* Czarny kwadrat */
+        color: rgb(255, 251, 0); /* Żółta czcionka */
+        width: 50px; /* Dopasowanie szerokości */
+        height: 50px; /* Dopasowanie wysokości */
+        display: flex; /* Aby wyśrodkować tekst w kwadracie */
+        justify-content: center; /* Wyśrodkowanie poziome */
+        align-items: center; /* Wyśrodkowanie pionowe */
+        cursor: pointer;
+    }
+
+    .mobile-banner-img {
+        display: none;
+    }
+
+    .mobile-categories_bar {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        margin-top: 10px;
+        height: 50px;
+        align-items: center;
+        font-size: 30px;
+        color: rgb(84, 187, 147);
+
+    }
+
+    .mobile-categories_bar span {
+        font-size: 30px;
+       
+    }
+
+.categories {
+
+    display: none;
+    
+}
+
+.mobile-categories {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    align-items: center;
+    height: 220px;
+    margin-top: 20px;
+    gap: 10px;
+    
+
+}
+
+.mobile-categories p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;  
+    padding-left: 10px;
+    padding-right: 10px; 
+    ;
+
+}
+
+.mobile-categories img {
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+.products {
+    display: none;
+
+}
+
+.mobile-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(/img/baner.webp);
+    width: 100%;
+    ;
+    
+}
+
+.mobile-offer {
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    /* padding: 20px; */
+    height: 500px;
+    padding-left: 10px;
+    ;
+}
+
+.mobile-product-img {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    width: 100%;
+    /* height: 100%; */
+    
+    
+
+}
+.mobile-main-product-price {
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.mobile-smart-logo {
+    height: auto;
+    padding-top: 5px;
+}
+
+.mobile-smart-logo img {
+    padding-top: 5px;
+    width: 50%;
+    
+}
+
+.mobile-product-description {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;   
+    ;
+    /* width: 100%; */
+}
+
+/* Instalment Prices */
+.mobile-instalment-price_1 {
+   display: none;
+}
+
+.mobileinstalment-price_2 {
+   display: none;
+}
+
+.mobile-instalment-box {
+  display: none;
+}
+
+.mobile-buy-to {
+    font-size: 20px;
+    color: rgb(168, 166, 166);
+    padding-bottom: 15px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.mobile-delivery {
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
