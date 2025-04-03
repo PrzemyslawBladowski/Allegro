@@ -13,6 +13,11 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 1023px) {
 
+
+
+    .categories {
+        display: none;
+    }
     .mobile-main-navbar {
         width: 100%;
         padding: 20px;
@@ -240,6 +245,7 @@ body {
         font-weight: bold;
         color: gray;
         width: 100%;
+        padding-bottom: 10px;
     }
 
     .mobile-footer {
@@ -766,7 +772,7 @@ border: 1px solid rgb(196, 193, 193);
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 2560px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
 
     /* .mobile-header-hide {
         display: none;
@@ -799,11 +805,21 @@ border: 1px solid rgb(196, 193, 193);
         padding-left: 35px;
         gap: 20px;
         flex-wrap:wrap;
+        width: 100%;
+        height: auto;
 
         
         
         
     }
+
+
+    .mobile-logo-img {
+        width: 100%;
+        display: flex;
+    }
+
+    
 
     .mobile-logo-div {
         order: 1;
@@ -823,6 +839,8 @@ border: 1px solid rgb(196, 193, 193);
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
+        width: 20%;
+        height: auto;
         
     }
 
@@ -859,7 +877,8 @@ border: 1px solid rgb(196, 193, 193);
 
     .mobile-navbar-icons img {
        
-        width: 10%;
+        width: 100%;
+        height: auto;
         flex-wrap: nowrap;
         cursor: pointer;
         filter: grayscale(100%);
@@ -893,7 +912,7 @@ border: 1px solid rgb(196, 193, 193);
     }
     
     .mobile-first_input {
-        width: 250px;
+        width: 70%;
     }
     .mobile-second_input{
         width: 170px;
@@ -922,8 +941,8 @@ border: 1px solid rgb(196, 193, 193);
     
     .mobile-navbar-icons img {
         margin-right: 15px;
-        width: 30px;
-        height: 30px;
+        width: 100%;
+        height: auto;
         cursor: pointer;
         filter: grayscale(100%);
     }
@@ -1019,8 +1038,56 @@ border: 1px solid rgb(196, 193, 193);
 
 
 
+    .categories {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        width: 100%; /* Zmieniono szerokość na 90% */
+        
+        margin-top: 20px;
+        height: 200px;
+        padding-top: 20px;
+        
+        
+    }
 
+   
+   
+    
+    .categories img {
+        width: 80%;
+        height: auto;
+        cursor: pointer;
+        
+        
+        
+    }
+    
+    .categories p {
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        
+    }
 
+    .mobile-categories {
+        display: none;
+    }
+
+    .mobile-products {
+        display: none;
+    }
+
+    .mobile-footer-hide {
+        display: none;
 
 
 
@@ -1028,10 +1095,111 @@ border: 1px solid rgb(196, 193, 193);
 
     }
     
+    .products {
+        height: 950px;
+        width: 100%; /* Zmieniono szerokość na 100% */
+        background-color: rgb(255, 255, 255);
+        
+        margin-top: 50px;
+        padding-top: 30px;
+        
+        
+        
+    }
     
+    .products img {
+        width: 70%;
+        height: auto;
+        cursor: pointer;
+        margin-top: 60px;
+       
+    }
     
+    .products span {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 27px;
+    }
+    
+    .main-product-price {
+        font-size: 35px;
+        font-weight: bold;
+        margin-left: 27px;
+    }
+    
+    .smart-logo img {
+        width: 130px;
+        height: 130px;
+        margin-left: 27px;
+        margin-top: -40px;
+    }
+    
+    .product-description {
+        font-size: 24px;
+        margin-left: 27px;
+        margin-top: -40px;
+        font-weight: bold;
+        width: 60%;
+    }
+    
+    .instalment-price_1 {
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 27px;
+        margin-top: 30px;
+        font-weight: bold;
+        width: 250px;
+    }
+    
+    .instalment-price_2 {
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 27px;
+        margin-top: 30px;
+        color: gray;
+        width: 80px;
+    }
+    
+    .instalment-box {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 30px;
+        width: 70px;
+        text-align: center;
+        background-color: rgb(62, 151, 240);
+        color: white;
+        border-radius: 10%;
+        padding: 1px 2px 1px 2px;
+    }
+
+
+    .buy-to {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 27px;
+        margin-top: 10px;
+        color: gray;
+    }
+    .delivery {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 27px;
+        color: limegreen;
+    }
+    
+    .serach {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Odstęp między inputami a przyciskiem */
+    }
     
 
+  }
+
+
+    
+    
 
 
 
