@@ -125,8 +125,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     cursor: pointer;
   }
   .mobile-categories img {
@@ -153,7 +152,7 @@ body {
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
     height: auto;
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
   .mobile-product-img {
     width: 100%;
@@ -241,9 +240,11 @@ body {
     display: flex;
     gap: 10px;
     padding-top: 15px;
+    padding-left: 10px;
   }
   .mobile-rating {
     align-items: baseline;
+    padding-left: 10px;
   }
   .mobile-product-short-description {
     display: flex;
@@ -280,6 +281,7 @@ body {
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     color: rgb(184, 184, 184);
   }
   .mobile-parameters {
@@ -567,6 +569,11 @@ body {
     background-color: rgb(229, 107, 8);
     border: none;
     cursor: pointer;
+  }
+  .mobile-parameters-fv {
+    display: flex;
+    justify-content: space-between;
+    text-align: right; /* Wyrównanie tekstu do prawej */
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
@@ -710,7 +717,7 @@ body {
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
     height: auto;
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
   .mobile-product-img {
     width: 100%;
@@ -801,6 +808,7 @@ body {
   }
   .mobile-rating {
     align-items: baseline;
+    padding-left: 10px;
   }
   .mobile-product-short-description {
     display: flex;
@@ -809,6 +817,7 @@ body {
     font-size: 23px;
     font-weight: bolder;
     padding-top: 10px;
+    padding-left: 10px;
     width: 85%;
   }
   .mobile-rating-stars {
@@ -821,10 +830,12 @@ body {
     gap: 10px;
     width: 40px;
     display: flex;
+    
   }
   .mobile-product-description-icons {
     display: flex;
     gap: 20px;
+    
   }
   .mobile-rating {
     display: flex;
@@ -837,6 +848,7 @@ body {
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     color: rgb(184, 184, 184);
   }
   .mobile-parameters {
@@ -1125,6 +1137,7 @@ body {
     border: none;
     cursor: pointer;
   }
+  
 }
 .night-mode {
   background-color: black;
@@ -1135,4 +1148,100 @@ body {
 }
 .night-mode img {
   filter: brightness(0.8);
-}/*# sourceMappingURL=style1.css.map */
+}
+
+.accessibility-declaration {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(245, 244, 244);
+}
+
+.accessibility-declaration p {
+  font-size: 18px;
+  color: rgb(124, 120, 120);
+  margin-bottom: 10px;
+}
+
+#toggle-reading {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgb(229, 111, 8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-reading:hover {
+  background-color: rgb(254, 130, 41);
+}
+
+body.high-contrast-mode #toggle-reading {
+  background-color: yellow;
+  color: black;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(229, 111, 8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-to-top:hover {
+  background-color: rgb(254, 130, 41);
+  transform: scale(1.1);
+}
+
+body.high-contrast-mode #scroll-to-top {
+  background-color: yellow;
+  color: black;
+}
+
+@media screen and (max-width: 319px), screen and (min-width: 1921px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(234, 237, 240);
+    padding: 0 10px; /* Dodaj padding dla całego body */
+  }
+
+  body > * {
+    display: none;
+  }
+
+  .unsupported-resolution {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(84, 84, 84);
+    text-align: center;
+    padding: 0 15px; /* Zwiększ odstępy wewnętrzne */
+    word-wrap: break-word; /* Zawijanie tekstu */
+    overflow-wrap: break-word; /* Dodatkowe zawijanie tekstu */
+    max-width: 100%; /* Ogranicz szerokość do 100% */
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1920px) {
+  .unsupported-resolution {
+    display: none; /* Ukryj komunikat dla pozostałych rozdzielczości */
+  }
+}
+/*# sourceMappingURL=style1.css.map */

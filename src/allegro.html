@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Allegro - największa platforma zakupowa w Polsce. Znajdź najlepsze oferty, promocje i produkty w różnych kategoriach.">
     <title>Allegro</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="preload" href="/css/style1.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
+    <noscript><link rel="stylesheet" href="/css/style1.css"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="unsupported-resolution">Rozdzielczość urządzenia nie jest obsługiwana</div>
     <header>
         
         
@@ -35,7 +38,7 @@
                 <div class="mobile-search">
                     <input class="mobile-first_input" type="text" placeholder="Czego szukasz?" size="60">
                     <input class="mobile-second_input" type="text" placeholder="Wszystkie kategorie" size="30">
-                    <button class="mobile-navbar-btn"><img class="mobile-lupa" src="/img/lupa.svg" alt=""></button>
+                    <button class="mobile-navbar-btn" aria-label="Szukaj"><img class="mobile-lupa" src="/img/lupa.svg" alt=""></button>
                 </div>
             
             </div>
@@ -283,6 +286,10 @@
 
 
             </div>
+            <div class="mobile-buttons">
+                <button type="button" class="mobile-add-to-basket-button" aria-label="Dodaj do koszyka">DODAJ DO KOSZYKA</button>
+                <button type="button" class="mobile-buy-button" aria-label="Kup i zapłać">KUP I ZAPŁAĆ</button>
+            </div>
 
 
 
@@ -363,9 +370,13 @@
 
             </div>
         </div>
-
+        <div class="accessibility-declaration">
+            <p>Strona jest zgodna z zasadami dostępności WCAG 2.1.</p>
+            <button id="toggle-reading" aria-pressed="false">Włącz czytanie tekstu</button>
+        </div>
+        <button id="scroll-to-top" aria-label="Przejdź na górę strony">⬆</button>
     </footer>
-    <script src="/script/script.js"></script>
+    <script src="/script/script.js" defer></script>
 </body>
 
 </html>
