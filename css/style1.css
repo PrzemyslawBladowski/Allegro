@@ -119,6 +119,8 @@ body {
     height: 300px;
     margin-top: 20px;
     gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .mobile-categories p {
     text-align: center;
@@ -145,6 +147,9 @@ body {
     width: 100%;
     margin-top: 30px;
   }
+  .mobile-products p {
+    padding: 10px; /* Dodanie odstępu wewnętrznego */
+  }
   .mobile-offer {
     display: flex;
     width: 100%;
@@ -157,12 +162,21 @@ body {
   .mobile-product-img {
     width: 100%;
   }
+
+  .mobile-product-description-icons-set
+  {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: space-around;
+  }
   .mobile-main-product-price {
     height: auto;
     font-size: 30px;
     font-weight: bold;
     width: 100%;
     cursor: pointer;
+    padding-left: 10px;
   }
   .mobile-smart-logo {
     height: auto;
@@ -171,6 +185,7 @@ body {
   .mobile-smart-logo img {
     padding-top: 5px;
     width: 50%;
+    padding-left: 10px;
   }
   .mobile-product-description {
     padding-top: 10px;
@@ -178,6 +193,7 @@ body {
     font-weight: bold;
     width: 100%;
     cursor: pointer;
+    
   }
   .mobile-instalment-price_1, .mobileinstalment-price_2, .mobile-instalment-box {
     display: none;
@@ -240,7 +256,14 @@ body {
     display: flex;
     gap: 10px;
     padding-top: 15px;
-    padding-left: 10px;
+    align-items: center; /* Wyrównanie elementów w pionie */
+    justify-content: space-between; /* Wyrównanie elementów w poziomie */
+    padding-left: 10px; /* Dostosowanie odstępu od lewej */
+    padding-right: 10px; /* Dostosowanie odstępu od prawej */
+  }
+  .mobile-condition p {
+    margin: 0; /* Usuń domyślne marginesy */
+    text-align: left; /* Wyrównanie tekstu do lewej */
   }
   .mobile-rating {
     align-items: baseline;
@@ -311,9 +334,6 @@ body {
     padding-right: 7px;
     padding-bottom: 12px;
   }
-  .mobile-parameters-condition {
-    background-color: rgb(245, 244, 244);
-    display: flex;
   }
   .mobile-parameters-key, .mobile-parameters-model, .mobile-parameters-color {
     background-color: rgb(245, 244, 244);
@@ -575,7 +595,12 @@ body {
     justify-content: space-between;
     text-align: right; /* Wyrównanie tekstu do prawej */
   }
-}
+  .mobile-product-fit p {
+    text-align: left; /* Wyrównanie tekstu do lewej */
+    margin-left: 0; /* Usuń ewentualne marginesy */
+    padding-left: 10px; /* Dodaj odstęp od lewej */
+  }
+
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .categories {
     display: none;
@@ -710,6 +735,10 @@ body {
     width: 100%;
     margin-top: 30px;
   }
+   .mobile-products p {
+    padding: 10px; /* Dodanie odstępu wewnętrznego */
+    margin: 0; /* Usuń ewentualne marginesy */
+  }
   .mobile-offer {
     display: flex;
     width: 100%;
@@ -720,7 +749,7 @@ body {
     /* padding-left: 10px; */
   }
   .mobile-product-img {
-    width: 100%;
+    width: 70%;
   }
   .mobile-main-product-price {
     height: auto;
@@ -732,10 +761,11 @@ body {
   .mobile-smart-logo {
     height: auto;
     padding-top: 5px;
+    padding-left: 10px;
   }
   .mobile-smart-logo img {
     padding-top: 5px;
-    width: 50%;
+    width: 25%;
   }
   .mobile-product-description {
     padding-top: 10px;
@@ -753,6 +783,10 @@ body {
     padding-bottom: 15px;
     width: 100%;
     padding-top: 15px;
+    
+  }
+  .mobile-buy-to p {
+    margin-left: 10px;
   }
   .mobile-delivery {
     font-size: 20px;
@@ -805,6 +839,14 @@ body {
     display: flex;
     gap: 10px;
     padding-top: 15px;
+    align-items: center; /* Wyrównanie elementów w pionie */
+    justify-content: space-between; /* Wyrównanie elementów w poziomie */
+    padding-left: 10px; /* Dostosowanie odstępu od lewej */
+    padding-right: 10px; /* Dostosowanie odstępu od prawej */
+  }
+  .mobile-condition p {
+    margin: 0; /* Usuń domyślne marginesy */
+    text-align: left; /* Wyrównanie tekstu do lewej */
   }
   .mobile-rating {
     align-items: baseline;
@@ -837,6 +879,7 @@ body {
     gap: 20px;
     
   }
+  
   .mobile-rating {
     display: flex;
     gap: 10px;
@@ -898,7 +941,7 @@ body {
     font-size: 23px;
   }
   .mobile-long-description img {
-    width: 100%;
+    width: 50%;
     padding-top: 20px;
   }
   .mobile-long-description1 {
@@ -1244,4 +1287,61 @@ body.high-contrast-mode #scroll-to-top {
     display: none; /* Ukryj komunikat dla pozostałych rozdzielczości */
   }
 }
-/*# sourceMappingURL=style1.css.map */
+
+.mobile-product-description-icons-set {
+  display: flex;
+  justify-content: flex-end; /* Przesunięcie ikon maksymalnie w prawo */
+  align-items: center; /* Wyrównanie w pionie */
+  padding-right: 15px; /* Delikatne odsunięcie od prawej krawędzi */
+}
+
+.mobile-product-description-icons {
+  display: flex;
+  gap: 15px; /* Większy odstęp między ikonami */
+}
+
+.mobile-product-fit {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.mobile-product-fit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Odstęp między sekcjami */
+}
+
+.mobile-condition {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mobile-product-description-icons-set {
+  display: flex;
+  justify-content: space-between; /* Rozdzielenie tekstu i ikon */
+  align-items: center; /* Wyrównanie w pionie */
+  width: 100%;
+}
+
+.mobile-product-description-icons-set p {
+  flex: 1; /* Rozciągnięcie tekstu na całą szerokość */
+  margin-right: 10px; /* Odstęp między tekstem a ikonami */
+}
+
+.mobile-product-description-icons {
+  display: flex;
+  gap: 10px; /* Odstęp między ikonami */
+}
+
+.mobile-rating {
+  display: flex;
+  align-items: center; /* Wyrównanie w pionie */
+  gap: 5px; /* Odstęp między elementami */
+  font-size: 16px;
+}
+
+.mobile-buyers {
+  font-size: 14px;
+  color: rgb(184, 184, 184);
+}
+
