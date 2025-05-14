@@ -1,3 +1,5 @@
-@use './variables' as *;
-@use './mixins' as *;
-@use './mobile';
+// Main SCSS Entry
+@import 'variables';
+@import 'mixins';
+@import 'mobile';
+@import 'style1';

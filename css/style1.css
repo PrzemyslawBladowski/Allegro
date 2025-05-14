@@ -601,10 +601,12 @@ body {
     padding-left: 10px; /* Dodaj odstęp od lewej */
   }
 
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .categories {
     display: none;
   }
+
+  
   .mobile-main-navbar {
     width: 100%;
     padding: 20px;
@@ -1345,3 +1347,969 @@ body.high-contrast-mode #scroll-to-top {
   color: rgb(184, 184, 184);
 }
 
+
+@media (min-width: 1440px) and (max-width: 1920px)
+{
+
+body {
+  background-color: rgb(234, 237, 240);
+    font-family: 'Roboto';
+    
+}
+main {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.mobile-long-description img {
+  width: 60%;
+  padding-top: 20px;
+}
+.mobile-parameters-condition {
+  background-color: rgb(245, 244, 244);
+  display: flex;
+}
+.mobile-condition {
+    display: flex;
+    gap: 10px;
+    padding-top: 15px;
+    align-items: center; /* Wyrównanie elementów w pionie */
+    justify-content: space-between; /* Wyrównanie elementów w poziomie */
+    padding-left: 10px; /* Dostosowanie odstępu od lewej */
+    padding-right: 10px; /* Dostosowanie odstępu od prawej */
+  }
+  .mobile-condition p {
+    margin: 0; /* Usuń domyślne marginesy */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+  }
+  .mobile-rating {
+    align-items: baseline;
+    padding-left: 10px;
+  }
+  .mobile-product-short-description {
+    display: flex;
+  }
+  .mobile-product-short-description p {
+    font-size: 23px;
+    font-weight: bolder;
+    padding-top: 10px;
+    width: 85%;
+  }
+  .mobile-rating-stars {
+    color: rgb(253, 199, 83);
+  }
+  .mobile-ratings {
+    color: rgb(33, 202, 160);
+  }
+  .mobile-product-short-description img {
+    gap: 10px;
+    width: 40px;
+    display: flex;
+  }
+  .mobile-product-description-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .mobile-rating {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mobile-buyers {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: rgb(184, 184, 184);
+  }
+  .mobile-parameters {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 7px 7px 7px 7px;
+    height: 510px;
+  }
+  .mobile-parameters-container {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 200px; */
+  }
+  .mobile-parameters p {
+    font-size: 23px;
+    padding-bottom: 5px;
+  }
+  .mobile-parameters div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+  }
+  .mobile-parameters span {
+    display: flex;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 12px;
+  }
+  }
+  .mobile-parameters-key, .mobile-parameters-model, .mobile-parameters-color {
+    background-color: rgb(245, 244, 244);
+  }
+  .mobile-parameters-first-span-color {
+    color: rgb(184, 184, 184);
+  }
+.mobile-main-navbar {
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.mobile-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+}
+.mobile-logo-img {
+  width: 50%;
+  display: flex;
+}
+.mobile-first_input {
+  width: 85%;
+  height: 60px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgba(228, 230, 230, 0.865);
+  padding-left: 10px;
+  font-size: 20px;
+}
+.mobile-navbar-btn {
+  width: 15%;
+  height: 60px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgb(254, 130, 41);
+  border: none;
+  color: white;
+}
+.mobile-lupa {
+  color: white;
+  width: 40px;
+  cursor: pointer;
+}
+.mobile-second_input, .mobile-user, .mobile-navbar-arrow, .mobile-second-navbar {
+  display: none;
+}
+.mobile-navbar-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.mobile-navbar-icons img {
+  width: 50px;
+  cursor: pointer;
+}
+.mobile-availability {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.mobile-availability-item {
+  font-size: 26px;
+  cursor: pointer;
+  align-items: center;
+}
+.mobile-availability-item:last-child {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 251, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mobile-banner-img {
+  display: none;
+}
+.mobile-categories_bar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  height: 50px;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(84, 187, 147);
+}
+.mobile-categories_bar span {
+  font-size: 30px;
+  cursor: pointer;
+}
+  .mobile-second-navbar{
+    display: none;
+  }
+  .categories {
+    display: none;
+  }
+  .mobile-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+  .mobile-logo-img {
+    width: 20%;
+    display: flex;
+  }
+  .mobile-first_input {
+    width: 85%;
+    height: 60px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(228, 230, 230, 0.865);
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .mobile-navbar-btn {
+    width: 15%;
+    height: 60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(254, 130, 41);
+    border: none;
+    color: white;
+  }
+  .mobile-lupa {
+    color: white;
+    width: 40px;
+    cursor: pointer;
+  }
+.mobile-banner-img {
+    display: none;
+}
+.mobile-categories {
+    display: none;
+}
+.mobile-offer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  /* padding-left: 10px; */
+}
+.mobile-buttons {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-add-to-basket-button {
+  width: 95%;
+  height: 80px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(229, 111, 8);
+  border: none;
+  cursor: pointer;
+}
+.mobile-buy-button {
+  width: 95%;
+  height: 80px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(229, 107, 8);
+  border: none;
+  cursor: pointer;
+}
+.mobile-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.mobile-footer p {
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+.mobile-footer span {
+  display: flex;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+.mobile-footer div {
+  padding: 20px;
+}
+.mobile-footer-logo {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(39, 80, 83);
+  display: flex;
+  justify-content: center;
+}
+.mobile-footer-logo img {
+  width: 30%;
+}
+.mobile-allegro-group-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  padding: 20px;
+}
+.mobile-allegro-group-links span {
+  padding: 15px;
+}
+
+/* Main Navigation */
+.main-navbar {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+    justify-content: space-around;
+    margin: 0; /* Usunięto auto */
+    width: 100%; /* Dopasowanie szerokości do okna */
+    height: auto;
+    justify-content: space-between; /* Rozkłada elementy równomiernie */
+    flex-wrap: nowrap; /* Zapobiega zawijaniu elementów */
+    align-items: center; /* Wyrównanie elementów w pionie */
+    gap: 20px; /* Dodano odstępy między sekcjami w navbarze */
+    
+}
+
+/* Logo */
+.logo-img {
+    margin-right: 50px;
+    flex: 0 0 auto; /* Utrzymanie stałej szerokości logo */
+    margin-right: 20px; /* Zmniejszono odstęp */
+}
+.search {
+    width: auto; /* Dopasowanie szerokości do zawartości */
+    height: auto;
+    flex: 1; /* Rozciągnięcie pola wyszukiwania */
+    display: flex;
+    flex-wrap: nowrap; /* Zapobiega zawijaniu elementów */
+    align-items: center; /* Wyrównanie elementów w pionie */
+    gap: 10px; /* Dodano odstępy między elementami */
+}
+/* Input Field */
+.input1 {
+        width: 220px; /* Pierwszy input jest dłuższy */
+        height: 50px;
+        border: 2px solid black;
+        font-size: 18px;
+        padding-left: 10px;
+       
+        transition: all 0.3s ease-in-out;
+    }
+
+    .input2 {
+        width: 190px; /* Drugi input jest krótszy */
+        height: 50px;
+        border: 2px solid black;
+        font-size: 18px;
+        padding-left: 10px;
+        
+        transition: all 0.3s ease-in-out;
+    }
+
+/* Navbar Button */
+.navbar-btn {
+    height: 50px; /* Dopasowano wysokość do pól tekstowych */
+    width: 120px; /* Zmniejszono szerokość przycisku */
+    font-size: 20px;
+    background-color: rgb(254, 130, 41);
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 0 0 auto; /* Stała szerokość przycisku */
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    flex: 0 0 auto; /* Stała szerokość ikon */
+    gap: 10px; /* Dodano odstępy między ikonami */
+}
+.navbar-icons img {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+/* User Icon */
+.user {
+    margin-left: 30px;
+    font-size: 25px;
+    align-self: center;
+    cursor: pointer;
+    flex: 0 0 auto; /* Stała szerokość użytkownika */
+    margin-left: 10px; /* Zmniejszono odstęp */
+}
+
+/* Navbar Arrow */
+.navbar-arrow {
+    rotate: 90deg;
+    margin-left: 10px;
+    flex: 0 0 auto; /* Stała szerokość strzałki */
+    margin-left: 5px; /* Zmniejszono odstęp */
+}
+
+/* Availability Section */
+.availability {
+    display: flex;
+    margin-left: 20px;
+    align-items: baseline;
+    gap: 15px;
+    flex: 0 0 auto; /* Stała szerokość sekcji dostępności */
+    gap: 10px; /* Zmniejszono odstępy między elementami */
+}
+
+.availability-item:nth-child(1) {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.availability-item:nth-child(2) {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.availability-item:nth-child(3) {
+    font-size: 46px;
+    cursor: pointer;
+}
+
+.availability-item:nth-child(4) {
+    font-size: 46px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
+    width: 70px;
+    height: 70px;
+    padding-left: 18px;
+    cursor: pointer;
+}
+
+/* Second Navbar */
+.second-navbar {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    gap: 20px; /* Zmniejszono odstępy między elementami */
+    font-size: 20px;
+    margin-left: 0;
+    padding-left: 20px; /* Zmniejszono padding dla lepszego dopasowania */
+    margin: 0; /* Usunięto auto */
+    max-width: 100%; /* Ograniczenie szerokości do 100% */
+    width: 100%; /* Dopasowanie szerokości do okna */
+}
+
+.second-navbar span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.second-navbar img {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner-img {
+    margin-top: 30px;
+    width: 100%; /* Dopasowanie szerokości banera do okna */
+    margin-left: auto;
+    margin-right: auto; /* Wyśrodkowuje baner */
+    padding-bottom: 0px;
+    display: block;
+    margin: 30px auto; /* Wyśrodkowanie banera */
+    max-width: 100%; /* Ograniczenie szerokości do 100% */
+}
+
+
+/* Categories */
+.categories {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around; /* Wyśrodkowanie kategorii */
+    gap: 20px; /* Dodano odstępy między kategoriami */
+    width: 100%; /* Dopasowanie szerokości do okna */
+    margin-left: auto;
+    margin-right: auto; /* Wyśrodkowuje kategorie */
+    margin-top: 30px;
+    height: auto;
+    padding-top: 30px;
+    flex-wrap: wrap; /* Dodano, aby kategorie mogły się zawijać w mniejszych rozdzielczościach */
+}
+
+.categories img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.categories p {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+/* Products Section */
+.products {
+    height: 850px;
+    width: 100%; /* Dopasowanie szerokości do okna */
+    background-color: rgb(255, 255, 255);
+    margin-left: 0; /* Usunięto marginesy */
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-left: 100px; /* Przywrócono padding */
+    margin: 50px auto; /* Wyśrodkowanie sekcji produktów */
+    max-width: 100%; /* Ograniczenie szerokości do 100% */
+    flex-wrap: wrap; /* Dodano, aby produkty mogły się zawijać w mniejszych rozdzielczościach */
+    justify-content: center; /* Wyśrodkowanie produktów */
+    gap: 20px; /* Dodano odstępy między produktami */
+    
+}
+
+.products img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 60px;
+    padding-right: 20px;
+    max-width: 100%; /* Zapewnienie, że obrazki nie przekroczą szerokości kontenera */
+}
+
+.products span {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 27px;
+}
+
+.main-product-price {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 27px;
+}
+
+.smart-logo img {
+    width: 130px;
+    height: 130px;
+    margin-left: 27px;
+    margin-top: -40px;
+}
+
+.product-description {
+    font-size: 20px;
+    margin-left: 27px;
+    margin-top: -40px;
+    font-weight: bold;
+    width: 250px;
+    max-width: 100%; /* Dopasowanie szerokości opisu do kontenera */
+}
+
+/* Instalment Prices */
+.instalment-price_1 {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 27px;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 250px;
+    max-width: 100%; /* Dopasowanie szerokości do kontenera */
+}
+
+.instalment-price_2 {
+display: none;
+}
+
+.instalment-box {
+   display: none;
+}
+
+.buy-to {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 27px;
+    margin-top: 10px;
+    color: gray;
+    max-width: 100%; /* Dopasowanie szerokości do kontenera */
+}
+
+.delivery {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 27px;
+    color: limegreen;
+    max-width: 100%; /* Dopasowanie szerokości do kontenera */
+}
+
+
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    /* Ustawienia dla allegro_mobile_main */
+    body[data-page="allegro"] .mobile-main-navbar,
+    body[data-page="allegro"] .mobile-offer,
+    body[data-page="allegro"] .mobile-categories,
+    body[data-page="allegro"] .mobile-products {
+        display: flex;
+    }
+
+    body[data-page="allegro"] .mobile-main-navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+    }
+
+    body[data-page="allegro"] .mobile-search input {
+        width: 85%;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    body[data-page="allegro"] .mobile-search button {
+        height: 60px;
+        width: 15%;
+    }
+
+    body[data-page="allegro"] .mobile-categories {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: white;
+        padding: 20px;
+    }
+
+    body[data-page="allegro"] .mobile-products {
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 20px;
+    }
+
+    body[data-page="allegro"] .mobile-offer {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    body[data-page="allegro"] .mobile-product-img {
+        width: 100%;
+        height: auto;
+    }
+
+    body[data-page="allegro"] .mobile-navbar-icons img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    /* Ukryj w allegro.html */
+    body[data-page="allegro"] .mobile-offer,
+    body[data-page="allegro"] .mobile-main-navbar,
+    body[data-page="allegro"] .mobile-categories,
+    body[data-page="allegro"] .mobile-buttons {
+        display: none;
+    }
+
+    /* Pokaż w allegro_mobile_offer.html */
+    body[data-page="allegro_mobile_offer"] .mobile-offer,
+    body[data-page="allegro_mobile_offer"] .mobile-main-navbar,
+    body[data-page="allegro_mobile_offer"] .mobile-categories,
+    body[data-page="allegro_mobile_offer"] .mobile-buttons {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    /* Ukryj w allegro.html */
+    body[data-page="allegro"] .mobile-offer,
+    body[data-page="allegro"] .mobile-main-navbar,
+    body[data-page="allegro"] .mobile-categories {
+        display: none;
+    }
+
+    /* Pokaż w allegro_mobile_offer.html */
+    body[data-page="allegro_mobile_offer"] .mobile-offer,
+    body[data-page="allegro_mobile_offer"] .mobile-main-navbar,
+    body[data-page="allegro_mobile_offer"] .mobile-categories {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    /* Ukryj w allegro.html */
+    body[data-page="allegro"] .mobile-offer,
+    body[data-page="allegro"] .mobile-main-navbar {
+        display: none;
+    }
+
+    /* Pokaż w allegro_mobile_offer.html */
+    body[data-page="allegro_mobile_offer"] .mobile-offer,
+    body[data-page="allegro_mobile_offer"] .mobile-main-navbar {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    /* Pokaż w allegro_mobile_offer */
+    body[data-page="allegro_mobile_offer"] .mobile-product-fit,
+    body[data-page="allegro_mobile_offer"] .mobile-parameters {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    /* Pokaż w allegro_mobile_offer */
+    body[data-page="allegro_mobile_offer"] .mobile-product-fit {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    body[data-page="allegro_mobile_offer"] .mobile-parameters {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 7px;
+        height: auto;
+    }
+
+    body[data-page="allegro_mobile_offer"] .mobile-parameters p {
+        font-size: 23px;
+        padding-bottom: 5px;
+    }
+
+    body[data-page="allegro_mobile_offer"] .mobile-parameters div {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 18px;
+    }
+
+    body[data-page="allegro_mobile_offer"] .mobile-parameters span {
+        display: flex;
+        padding: 7px;
+    }
+
+    body[data-page="allegro_mobile_offer"] .mobile-parameters-key,
+    body[data-page="allegro_mobile_offer"] .mobile-parameters-model,
+    body[data-page="allegro_mobile_offer"] .mobile-parameters-color {
+        background-color: rgb(245, 244, 244);
+    }
+
+    body[data-page="allegro_mobile_offer"] .mobile-parameters-first-span-color {
+        color: rgb(184, 184, 184);
+    }
+}
+
+header  {
+    width: 100%;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 1439px), screen and (min-width: 1921px) {
+    .main-navbar,
+    .second-navbar,
+    .banner-img,
+    .categories {
+        display: none;
+    }
+}
+
+/* High Contrast Mode */
+body.high-contrast-mode {
+    background-color: #000 !important;
+    color: #ff0 !important;
+}
+body.high-contrast-mode header,
+body.high-contrast-mode main,
+body.high-contrast-mode footer {
+    background-color: #000 !important;
+}
+body.high-contrast-mode .main-navbar span,
+body.high-contrast-mode .second-navbar span {
+    color: #ff0 !important;
+}
+body.high-contrast-mode .main-navbar,
+body.high-contrast-mode .second-navbar {
+    background-color: #000 !important;
+}
+body.high-contrast-mode .products {
+    background-color: #000 !important;
+}
+body.high-contrast-mode .navbar-btn,
+body.high-contrast-mode .mobile-navbar-btn,
+body.high-contrast-mode .mobile-buttons button {
+    background-color: #ff0 !important;
+    color: #000 !important;
+    border-color: #ff0 !important;
+}
+body.high-contrast-mode img {
+    filter: none !important; /* Usunięcie filtra, aby obrazy nie były modyfikowane */
+}
+
+body.high-contrast-mode {
+  background-color: #000 !important;
+}
+
+body.high-contrast-mode header,
+body.high-contrast-mode main,
+body.high-contrast-mode footer {
+    background-color: #000 !important;
+}
+body.high-contrast-mode .main-navbar,
+body.high-contrast-mode .second-navbar,
+body.high-contrast-mode .categories,
+body.high-contrast-mode .banner-img {
+    background-color: #000 !important;
+}
+body.high-contrast-mode .navbar-btn,
+body.high-contrast-mode .mobile-navbar-btn,
+body.high-contrast-mode .mobile-buttons button {
+    background-color: #ff0 !important;
+    color: #000 !important;
+    border-color: #ff0 !important;
+}
+/* Usuń lub zakomentuj poniższy blok, który odwraca kolory obrazów: */
+/*
+body.high-contrast-mode img {
+    filter: brightness(0) invert(1) !important;
+}
+*/
+
+/* Global black background */
+
+
+/* Accessibility banner */
+.accessibility-declaration {
+  background-color: #dadada !important;
+}
+
+.accessibility-declaration p,
+.accessibility-declaration button {
+  color: rgb(0, 0, 0) !important;
+}
+
+.accessibility-declaration #toggle-reading {
+    background-color: rgb(255, 119, 0) !important;
+    color: #ffffff !important;
+}
+
+/* High Contrast Mode – mobile adjustments */
+body.high-contrast-mode .mobile-main-navbar {
+  background-color: #000 !important;
+}
+body.high-contrast-mode .mobile-main-navbar span,
+body.high-contrast-mode .mobile-main-navbar p {
+  color: #ff0 !important;
+}
+
+/* icons remain unchanged */
+
+body.high-contrast-mode .mobile-products {
+  background-color: #000 !important;
+}
+body.high-contrast-mode .mobile-products img {
+  filter: none !important; /* ensure images keep original colors */
+}
+body.high-contrast-mode .mobile-products p,
+body.high-contrast-mode .mobile-products span {
+  color: #ff0 !important;
+}
+
+/* High Contrast Mode – wszystkie elementy w mobile-offer */
+body.high-contrast-mode .mobile-offer,
+body.high-contrast-mode .mobile-offer * {
+  background-color: #000 !important;
+  color: #ff0    !important;
+}
+
+body[data-page="allegro"] .accessibility-declaration {
+  background-color: #dadada !important;
+}
+
+body[data-page="allegro"] .accessibility-declaration p,
+body[data-page="allegro"] .accessibility-declaration button {
+  color: rgb(0, 0, 0) !important;
+}
+
+body[data-page="allegro"] .accessibility-declaration #toggle-reading {
+  background-color: rgb(255, 119, 0) !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast-mode .accessibility-declaration {
+  background-color: #000 !important; /* Czarne tło */
+}
+
+body.high-contrast-mode .accessibility-declaration p,
+body.high-contrast-mode .accessibility-declaration button {
+  color: #ff0 !important; /* Żółty tekst */
+}
+
+body.high-contrast-mode .accessibility-declaration #toggle-reading {
+  background-color: #ff0 !important; /* Żółte tło */
+  color: #000 !important; /* Czarny tekst */
+}
+body.high-contrast-mode .mobile-categories_bar {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-parameters {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-parameters-key{
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-parameters-model {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-parameters-color {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-parameters {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-long-description {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-product-info {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-buy-container {
+  background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-quantity-box3{
+  background-color: #000 !important; /* Czarne tło */
+}

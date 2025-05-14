@@ -1,13 +1,13 @@
+// SCSS Mixins
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin button-style($bg-color, $color: white) {
-  background-color: $bg-color;
+@mixin button-style($bg, $color) {
+  background-color: $bg;
   color: $color;
   border: none;
   cursor: pointer;
 }
-

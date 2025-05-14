@@ -40,175 +40,66 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    if (availabilityItems.length > 0) {
-        availabilityItems[0].addEventListener("click", () => {
+    // Dodano sprawdzenie, czy obrazki mają poprawne źródła
+    document.querySelectorAll("img").forEach(img => {
+        if (!img.src || img.src.trim() === "") {
+            console.error(`Obrazek z alt="${img.alt}" nie ma ustawionego src.`);
+        }
+    });
+
+    // Usunięto potencjalne konflikty z klasami i atrybutami
+    document.querySelectorAll("img").forEach(img => {
+        img.addEventListener("error", () => {
+            console.error(`Nie udało się załadować obrazka: ${img.src}`);
+        });
+    });
+
+    // Sprawdź, czy istnieje tylko jeden element .mobile-categories
+    const existingMobileCategories = document.querySelectorAll(".mobile-categories");
+    if (existingMobileCategories.length > 1) {
+        for (let i = 1; i < existingMobileCategories.length; i++) {
+            existingMobileCategories[i].remove(); // Usuń duplikaty
+        }
+    }
+
+    function handleClick(idx) {
+        // reset
+        if (idx === 0) {
+            document.querySelectorAll("p, span, ul").forEach(el => el.style.fontSize = "");
+            isAPlusClicked = isAPlusPlusClicked = false;
+            return;
+        }
+        // A+
+        if (idx === 1 && !isAPlusClicked) {
             document.querySelectorAll("p, span, ul").forEach(el => {
-                if (!el.closest(".mobile-buy-container")) {
-                    el.style.fontSize = ""; // Przywróć nowy domyślny rozmiar z CSS
-                }
+                const size = parseFloat(getComputedStyle(el).fontSize);
+                el.style.fontSize = `${size + fontSizeAPlusIncrement}px`;
             });
-            if (categories) {
-                categories.querySelectorAll("p").forEach(el => {
-                    el.style.fontSize = ""; // Przywróć domyślny rozmiar tekstu w .mobile-categories
-                });
-            }
-            isAPlusClicked = false;
-            isAPlusPlusClicked = false;
-        });
-
-        availabilityItems[1].addEventListener("click", () => {
-            if (!isAPlusClicked) {
-                document.querySelectorAll("p, span, ul").forEach(el => {
-                    if (!el.closest(".mobile-buy-container") && !el.closest(".mobile-categories")) {
-                        const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
-                        el.style.fontSize = `${currentSize + fontSizeAPlusIncrement}px`;
-                    }
-                });
-                if (categories) {
-                    categories.querySelectorAll("p").forEach(el => {
-                        const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
-                        el.style.fontSize = `${currentSize + fontSizeAPlusIncrement}px`;
-                    });
-                }
-                isAPlusClicked = true;
-            }
-        });
-
-        availabilityItems[2].addEventListener("click", () => {
-            if (!isAPlusPlusClicked) {
-                document.querySelectorAll("p, span, ul").forEach(el => {
-                    if (!el.closest(".mobile-buy-container") && !el.closest(".mobile-categories")) {
-                        const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
-                        el.style.fontSize = `${currentSize + fontSizeAPlusPlusIncrement}px`;
-                    }
-                });
-                if (categories) {
-                    categories.querySelectorAll("p").forEach(el => {
-                        const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
-                        el.style.fontSize = `${currentSize + fontSizeAPlusPlusIncrement}px`;
-                    });
-                }
-                isAPlusPlusClicked = true;
-            }
-        });
-
-        availabilityItems[3].addEventListener("click", () => {
+            isAPlusClicked = true;
+            return;
+        }
+        // A++
+        if (idx === 2 && !isAPlusPlusClicked) {
+            document.querySelectorAll("p, span, ul").forEach(el => {
+                const size = parseFloat(getComputedStyle(el).fontSize);
+                el.style.fontSize = `${size + fontSizeAPlusPlusIncrement}px`;
+            });
+            isAPlusPlusClicked = true;
+            return;
+        }
+        // high contrast
+        if (idx === 3) {
             isHighContrastMode = !isHighContrastMode;
             document.body.classList.toggle("high-contrast-mode", isHighContrastMode);
-
-            // Ustawienia dla wysokiego kontrastu
-            if (isHighContrastMode) {
-                document.documentElement.style.backgroundColor = "black"; // Zmień tło <html> na czarne
-                document.body.style.backgroundColor = "black"; // Zmień tło <body> na czarne
-                document.querySelectorAll("div").forEach(el => {
-                    el.style.backgroundColor = "black";
-                });
-                document.querySelectorAll(".mobile-navbar-btn, .mobile-add-to-basket-button, .mobile-buy-button, .mobile-first-color-box, .mobile-memory-box, .mobile-ram-box").forEach(el => {
-                    el.style.backgroundColor = "yellow";
-                    el.style.color = "black";
-                    el.style.borderColor = "yellow";
-                });
-                document.querySelectorAll("p, span, a").forEach(el => {
-                    el.style.color = "yellow";
-                });
-
-                // Zmień kolor tekstu w boxach w mobile-buy-container na czarny
-                document.querySelectorAll(".mobile-buy-container .mobile-first-color-box p, .mobile-buy-container .mobile-ram-box p, .mobile-buy-container .mobile-memory-box p").forEach(el => {
-                    el.style.color = "black";
-                });
-
-                // Zmień kolor tekstu w drugim boxie (mobile-second-color-box) na żółty
-                document.querySelectorAll(".mobile-buy-container .mobile-second-color-box p").forEach(el => {
-                    el.style.color = "yellow";
-                });
-
-                // Zmień kolor pozostałych elementów <p> w mobile-buy-container na żółty
-                document.querySelectorAll(".mobile-buy-container p:not(.mobile-first-color-box p):not(.mobile-second-color-box p):not(.mobile-ram-box p):not(.mobile-memory-box p)").forEach(el => {
-                    el.style.color = "yellow";
-                });
-
-                // Zmień kolor listy pod specyfikacją urządzenia na żółty
-                document.querySelectorAll(".mobile-long-description ul li").forEach(el => {
-                    el.style.color = "yellow";
-                });
-
-                // Zmień styl dla mobile-second-color-box
-                document.querySelectorAll(".mobile-second-color-box").forEach(el => {
-                    el.style.borderColor = "yellow";
-                });
-
-                // Zmień styl dla mobile-quanity-boxes
-                document.querySelectorAll(".mobile-guantity-boxes div").forEach(el => {
-                    el.style.borderColor = "yellow";
-                    el.style.color = "yellow";
-                });
-
-                // Zmień kolor tekstu w mobile-first-input na żółty
-                document.querySelector(".mobile-first_input").style.color = "yellow";
-
-                // Zmień kolor ikon SVG na żółty
-                document.querySelectorAll("svg").forEach(el => {
-                    el.style.stroke = "yellow";
-                    el.style.fill = "yellow";
-                });
-            } else {
-                // Przywróć domyślne style
-                document.documentElement.style.backgroundColor = ""; // Przywróć domyślne tło <html>
-                document.body.style.backgroundColor = ""; // Przywróć domyślne tło <body>
-                document.querySelectorAll("div").forEach(el => {
-                    el.style.backgroundColor = "";
-                });
-                document.querySelectorAll(".mobile-navbar-btn, .mobile-add-to-basket-button, .mobile-buy-button, .mobile-first-color-box, .mobile-memory-box, .mobile-ram-box").forEach(el => {
-                    el.style.backgroundColor = "";
-                    el.style.color = "";
-                    el.style.borderColor = "";
-                });
-                document.querySelectorAll("p, span, a").forEach(el => {
-                    el.style.color = "";
-                });
-
-                // Przywróć domyślny kolor tekstu w boxach w mobile-buy-container
-                document.querySelectorAll(".mobile-buy-container .mobile-first-color-box p, .mobile-buy-container .mobile-ram-box p, .mobile-buy-container .mobile-memory-box p").forEach(el => {
-                    el.style.color = "";
-                });
-
-                // Przywróć domyślny kolor tekstu w drugim boxie (mobile-second-color-box)
-                document.querySelectorAll(".mobile-buy-container .mobile-second-color-box p").forEach(el => {
-                    el.style.color = "";
-                });
-
-                // Przywróć domyślny kolor pozostałych elementów <p> w mobile-buy-container
-                document.querySelectorAll(".mobile-buy-container p:not(.mobile-first-color-box p):not(.mobile-second-color-box p):not(.mobile-ram-box p):not(.mobile-memory-box p)").forEach(el => {
-                    el.style.color = "";
-                });
-
-                // Przywróć domyślny kolor listy pod specyfikacją urządzenia
-                document.querySelectorAll(".mobile-long-description ul li").forEach(el => {
-                    el.style.color = "";
-                });
-
-                // Przywróć domyślny styl dla mobile-second-color-box
-                document.querySelectorAll(".mobile-second-color-box").forEach(el => {
-                    el.style.borderColor = "";
-                });
-
-                // Przywróć domyślny styl dla mobile-quanity-boxes
-                document.querySelectorAll(".mobile-guantity-boxes div").forEach(el => {
-                    el.style.borderColor = "";
-                    el.style.color = "";
-                });
-
-                // Przywróć domyślny kolor tekstu w mobile-first-input
-                document.querySelector(".mobile-first_input").style.color = "";
-
-                // Przywróć domyślny kolor ikon SVG
-                document.querySelectorAll("svg").forEach(el => {
-                    el.style.stroke = "";
-                    el.style.fill = "";
-                });
-            }
-        });
+        }
     }
+
+    // wspólna inicjalizacja dla desktop i mobile
+    ['.availability-item', '.mobile-availability-item'].forEach(selector => {
+        document.querySelectorAll(selector).forEach((el, idx) => {
+            el.addEventListener('click', () => handleClick(idx));
+        });
+    });
 
     const toggleReadingButton = document.getElementById("toggle-reading");
     const scrollToTopButton = document.getElementById("scroll-to-top");
@@ -236,4 +127,26 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     exampleFunction();
+
+    // Sprawdzenie, czy div.search istnieje i ma poprawne dzieci
+    const searchDiv = document.querySelector(".search");
+    if (!searchDiv) {
+        console.error("Nie znaleziono elementu .search");
+    } else {
+        const input1 = searchDiv.querySelector(".input1");
+        const input2 = searchDiv.querySelector(".input2");
+        const button = searchDiv.querySelector(".navbar-btn");
+
+        if (!input1 || !input2 || !button) {
+            console.error("Nie znaleziono elementów .input1, .input2 lub .navbar-btn w .search");
+        }
+    }
+
+    // Sprawdzenie, czy div.search istnieje i ma poprawne dzieci
+    if (searchDiv) {
+        const inputs = searchDiv.querySelectorAll("input");
+        if (inputs.length === 0) {
+            console.error("Nie znaleziono elementów <input> w .search");
+        }
+    }
 });
