@@ -1703,7 +1703,8 @@ main {
 }
 /* Input Field */
 .input1 {
-        width: 220px; /* Pierwszy input jest dłuższy */
+        min-width: 220px; /* Pierwszy input jest dłuższy */
+        width: 100%; /* Dopasowanie szerokości do okna */
         height: 50px;
         border: 2px solid black;
         font-size: 18px;
@@ -1713,7 +1714,8 @@ main {
     }
 
     .input2 {
-        width: 190px; /* Drugi input jest krótszy */
+        min-width: 190px; /* Drugi input jest krótszy */
+        width: 80%;
         height: 50px;
         border: 2px solid black;
         font-size: 18px;
@@ -2195,6 +2197,14 @@ body.high-contrast-mode .categories,
 body.high-contrast-mode .banner-img {
     background-color: #000 !important;
 }
+body.high-contrast-mode .mobile-parameters-condition {
+    background-color: #000 !important;
+    color: #ff0 !important;
+}
+body.high-contrast-mode .mobile-parameters span {
+    background-color: #000 !important;
+    color: #ff0 !important;
+}
 body.high-contrast-mode .navbar-btn,
 body.high-contrast-mode .mobile-navbar-btn,
 body.high-contrast-mode .mobile-buttons button {
@@ -2284,7 +2294,8 @@ body.high-contrast-mode .accessibility-declaration #toggle-reading {
   color: #000 !important; /* Czarny tekst */
 }
 body.high-contrast-mode .mobile-categories_bar {
-  background-color: #000 !important; /* Czarne tło */
+  background-color: #000 !important;
+  color: #ff0; /* Czarne tło */
 }
 body.high-contrast-mode .mobile-parameters {
   background-color: #000 !important; /* Czarne tło */
@@ -2310,6 +2321,30 @@ body.high-contrast-mode .mobile-product-info {
 body.high-contrast-mode .mobile-buy-container {
   background-color: #000 !important; /* Czarne tło */
 }
-body.high-contrast-mode .mobile-quantity-box3{
+body.high-contrast-mode .mobile-guantity-box3{
   background-color: #000 !important; /* Czarne tło */
+}
+body.high-contrast-mode .mobile-guantity-boxes{
+  background-color: #000 !important; /* Czarne tło */
+  color: #ff0;
+}
+body.high-contrast-mode .mobile-ram-box{
+  background-color: #000 !important; /* Czarne tło */
+  color: #ff0;
+  border-color: #ff0;
+}
+body.high-contrast-mode .mobile-first-color-box{
+  background-color: #000 !important; /* Czarne tło */
+  color: #ff0;
+  border-color: #ff0;
+}
+body.high-contrast-mode .mobile-second-color-box{
+  background-color: #000 !important; /* Czarne tło */
+  color: #ff0;
+  border-color: #ff0;
+}
+body.high-contrast-mode .mobile-memory-box{
+  background-color: #000 !important; /* Czarne tło */
+  color: #ff0;
+  border-color: #ff0;
 }
